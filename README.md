@@ -1,5 +1,4 @@
-# mri-sequence-classification
-
+<h1 align="center">MRI Sequence Classification </h1>
 
 This repository contains the basic inference scripts to get our longitudinal mri images classified into one of the four modalities: T1, T1c, T2w, and FLAIR or a class called OTHER, which should entail all other MRI modalities. There are three main scripts and 2 configuration files corresponding to the inference and the later postprocessing.
 
