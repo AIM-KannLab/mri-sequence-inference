@@ -22,7 +22,7 @@ When you clone the repository, you should also see a the empty folder _data_csv/
   - Finally, adjust the ``MODELS_DIR`` to the path where you downloaded the models from the _Deep Learning-based Type Identification of Volumetric MRI Sequences_ paper (link).
 - Set the GET_CSV parameter to ``TRUE`` to get firstly a list of csv files of the dataset.
 - Change line 244  in the ``inference.py`` script to the paths that you want to firstly get your data from / on and run the script. You will see a list of .csv files in a dataset subfolder inside of _data_csv/long/_.
--  Set the GET_CSV parameter to ``FALSE``. Run inference again, but this time do it by executing the ``-t`` flag, e.g. ```python3 inference.py -t OUTPUT_DIR_XYZ``, where ``OUTPUT_DIR_XYZ`` is the directory where you have your .csv´s stored.
+-  Set the GET_CSV parameter to ``FALSE``. Run inference again, but this time do it by executing the ``-t`` flag, e.g. ``python3 inference.py -t OUTPUT_DIR_XYZ``, where ``OUTPUT_DIR_XYZ`` is the directory where you have your .csv´s stored.
 
 ### 2. Parser
 - TODO
