@@ -1,6 +1,9 @@
 # mri-sequence-classification
 This repository contains the basic inference scripts to get our longitudinal mri images classified into one of the four modalities: T1, T1c, T2w, and FLAIR or a class called OTHER, which should entail all other MRI modalities. There are three main scripts and 2 configuration files corresponding to the inference and the later postprocessing.
 
+## Disclaimer
+As this script is adjusted from the code provided in the paper _Deep Learning-based Type Identification of Volumetric MRI Sequences_ it is far from 
+
 ## How to run
 First, create a conda environment, activate it, and install the dependencies.
 
@@ -23,6 +26,8 @@ When you clone the repository, you should also see a the empty folder _data_csv/
 - Set the GET_CSV parameter to ``TRUE`` to get firstly a list of csv files of the dataset.
 - Change line 244  in the ``inference.py`` script to the paths that you want to firstly get your data from / on and run the script. You will see a list of .csv files in a dataset subfolder inside of _data_csv/long/_.
 -  Set the GET_CSV parameter to ``FALSE``. Run inference again, but this time do it by executing the ``-t`` flag, e.g. ``python3 inference.py -t OUTPUT_DIR_XYZ``, where ``OUTPUT_DIR_XYZ`` is the directory where you have your .csv´s stored.
+- After the script has run you will see the .csv´s files which were empty before now filled with data corresponding to the image characteristics and the prediction of the algorithm.
 
 ### 2. Parser
-- TODO
+Now that you have a subfodler with your dataset and .csv´s containing the predictions, it is time to run some post-processing and filter out badly classified, conflicting, and erroneous data. For that we are going to use the ``parser.py`` file, which is also accompanied by a ``config_parser.py`` file. In this configuration file, you should make sure again that you have the path ``BASE_DIR`` well aligned with your project directory.  
+- After adjusting the ``config_parser.py``, you can run the parser file. Take into account the list of main directories defined at the beginning of the file and (un)comment the name of the directory / dataset you want to run. If you leave all uncomemented, it will run on all four. This may take a while. 
