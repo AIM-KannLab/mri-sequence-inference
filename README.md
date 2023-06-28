@@ -1,4 +1,16 @@
 <h1 align="center">MRI Sequence Classification </h1>
+<div align="center">
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification" target="_blank"><img src="https://img.shields.io/github/stars/AIM-KannLab/mri-sequence-classification?style=social" alt="Stars Badge"/></a>
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification/fork" target="_blank"><img src="https://img.shields.io/github/forks/AIM-KannLab/mri-sequence-classification?style=social" alt="Forks Badge"/></a>
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification/stargazers" target="_blank"><img src="https://img.shields.io/github/watchers/AIM-KannLab/mri-sequence-classification?style=social" alt="Watchers Badge"/></a>
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification" target="_blank"><img src="https://img.shields.io/github/repo-size/AIM-KannLab/mri-sequence-classification" alt="Repository size Badge"/></a>
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification/commits/" target="_blank"><img src="https://img.shields.io/github/last-commit/AIM-KannLab/mri-sequence-classification" alt="Last commit Badge"/></a>
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification/issues" target="_blank"><img src="https://img.shields.io/github/issues/AIM-KannLab/mri-sequence-classification" alt="Open issues Badge"/></a>
+<a href="https://github.com/AIM-KannLab/mri-sequence-classification/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/AIM-KannLab/mri-sequence-classification" alt="Open pull requests Badge"/></a>
+<br>
+<a href="https://www.linkedin.com/in/juan-carlos-climent-pardo/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&color=blue" alt="LinkedIn Badge"/></a>
+<a href="https://github.com/AIM-KannLab" target="_blank"><img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github&color=black" alt="GitHub Badge"/></a>
+</div>
 
 This repository contains the basic inference scripts to get our longitudinal mri images classified into one of the four modalities: T1, T1c, T2w, and FLAIR or a class called OTHER, which should entail all other MRI modalities. There are three main scripts and 2 configuration files corresponding to the inference and the later postprocessing.
 
